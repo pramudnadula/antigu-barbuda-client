@@ -12,7 +12,7 @@ function NavBar({ location }) {
 	};
 	return (
 		<nav className="">
-			<div className="mx-auto px-4 sm:px-6 lg:px-8 py-2">
+			<div className="mx-auto px-4 sm:px-6 2xl:px-8 py-2">
 				<div className="flex items-center justify-between h-16">
 					<div className="flex items-center justify-between w-full">
 						<div className="flex-shrink-0">
@@ -24,7 +24,7 @@ function NavBar({ location }) {
 								/>
 							</a>
 						</div>
-						<div className="hidden md:block">
+						<div className="hidden 2xl:block">
 							<div className="ml-10 flex items-baseline space-x-4">
 								<a
 									href="/"
@@ -71,7 +71,7 @@ function NavBar({ location }) {
 									Gallery
 								</a>
 								<select
-									className="relative block w-full px-3 py-2 mt-3 text-gray-900 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-pink-500 focus:border-pink-500"
+									className="relative block w-full px-3 py-2 mt-3 text-gray-900 bg-white border border-gray-300 rounded-2xl focus:outline-none focus:ring focus:ring-pink-500 focus:border-pink-500"
 									style={{
 										appearance: 'none',
 										backgroundImage: `url("https://upload.wikimedia.org/wikipedia/commons/9/9d/Arrow-down.svg")`,
@@ -90,13 +90,13 @@ function NavBar({ location }) {
 								</select>
 								<button
 									type="button"
-									className="px-10 py-2 text-sm font-medium whitespace-nowrap text-[#ec008c] rounded-md hover:bg-[#ec008c] hover:text-white"
+									className="px-10 py-2 text-sm font-medium whitespace-nowrap text-[#ec008c] rounded-2xl hover:bg-[#ec008c] hover:text-white"
 								>
 									Login
 								</button>
 								<button
 									type="button"
-									className="px-10 py-2 text-sm font-medium whitespace-nowrap bg-[#ec008c] text-white rounded-md hover:bg-[#ec008c] hover:text-black"
+									className="px-10 py-2 text-sm font-medium whitespace-nowrap bg-[#ec008c] text-white rounded-2xl hover:bg-[#ec008c] hover:text-black"
 								>
 									Signup
 								</button>
@@ -104,11 +104,11 @@ function NavBar({ location }) {
 						</div>
 					</div>
 
-					<div className="-mr-2 flex md:hidden">
+					<div className="-mr-2 flex 2xl:hidden">
 						<button
 							onClick={() => setIsMenuOpen(!isMenuOpen)}
 							type="button"
-							className="bg-[#ec008c] inline-flex items-center justify-center p-2 rounded-md text-white hover:text-black hover:bg-[#ec008c] focus:outline-none "
+							className="bg-[#ec008c] z-10 inline-flex items-center justify-center p-2 rounded-2xl text-white hover:text-black hover:bg-[#ec008c] focus:outline-none "
 							aria-controls="mobile-menu"
 							aria-expanded="false"
 						>
@@ -153,7 +153,16 @@ function NavBar({ location }) {
 			</div>
 
 			{isMenuOpen && (
-				<div className="md:hidden bg-white" id="mobile-menu">
+				<div className="2xl:hidden bg-white absolute w-full right-0 top-0" id="mobile-menu">
+					<div className="flex-shrink-0">
+						<a href="/" className="text-black">
+							<img
+								src={`${process.env.PUBLIC_URL}/assets/images/ABTA_Logo.png`}
+								alt="logo"
+								className="w-36 ml-3"
+							/>
+						</a>
+					</div>
 					<div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
 						<a
 							href="/"
@@ -200,7 +209,7 @@ function NavBar({ location }) {
 							Gallery
 						</a>
 						<select
-							className="relative block w-full px-3 py-2 mt-3 text-gray-900 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-pink-500 focus:border-pink-500"
+							className="relative block w-full px-3 py-2 mt-3 text-gray-900 bg-white border border-gray-300 rounded-2xl focus:outline-none focus:ring focus:ring-pink-500 focus:border-pink-500"
 							style={{
 								appearance: 'none',
 								backgroundImage: `url("https://upload.wikimedia.org/wikipedia/commons/9/9d/Arrow-down.svg")`,
@@ -219,13 +228,13 @@ function NavBar({ location }) {
 						</select>
 						<button
 							type="button"
-							className="block px-10 py-2 text-sm font-medium whitespace-nowrap text-[#ec008c] rounded-md hover:bg-[#ec008c] hover:text-white"
+							className="block px-10 py-2 text-sm font-medium whitespace-nowrap text-[#ec008c] rounded-2xl hover:bg-[#ec008c] hover:text-white"
 						>
 							Login
 						</button>
 						<button
 							type="button"
-							className="block px-10 py-2 text-sm font-medium whitespace-nowrap bg-[#ec008c] text-white rounded-md hover:bg-[#ec008c] hover:text-black"
+							className="block px-10 py-2 text-sm font-medium whitespace-nowrap bg-[#ec008c] text-white rounded-2xl hover:bg-[#ec008c] hover:text-black"
 						>
 							Signup
 						</button>

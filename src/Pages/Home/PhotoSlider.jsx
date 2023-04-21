@@ -24,7 +24,7 @@ const PhotoSlider = () => {
 	};
 
 	return (
-		<div className="relative md:w-2/3 md:-right-4">
+		<div className="relative md:w- md:-right-4">
 			<div className="flex gap-4">
 				<img
 					src={`${process.env.PUBLIC_URL}/assets/images/${images[currentImage]}`}

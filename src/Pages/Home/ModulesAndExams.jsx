@@ -40,7 +40,7 @@ function ModulesAndExams() {
 				{data.map((item, key) => (
 					<div
 						key={key}
-						className=" h-[370px] w-[250px] rounded-[10px] cursor-pointer hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-[#0009] border-2  overflow-hidden"
+						className=" h-[370px] w-[250px] rounded-[10px] cursor-pointer hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-[#00000028] border-2  overflow-hidden"
 					>
 						<div className="flex flex-col items-center h-full justify-between">
 							<div>

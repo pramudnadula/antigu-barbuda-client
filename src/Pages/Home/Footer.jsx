@@ -54,9 +54,9 @@ function Footer() {
 					</div>
 				</div>
 			</div>
-			<div className="bg-[#ffffff81] text-black font-bold text-center py-4 flex justify-between  px-20">
+			<div className="bg-[#ffffff81] text-black font-bold text-center py-4 justify-between  px-20 flex flex-col md:flex-row gap-4 md:gap-0">
 				<div>@ 2023 AB Certified Agent Program. All Rights Reserved. Partnered by SP Solutions (PVT) LTD</div>
-				<div className="flex">
+				<div className="flex justify-center ">
 					<img
 						src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-512.png"
 						alt="facebook"
