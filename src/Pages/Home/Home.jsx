@@ -18,11 +18,11 @@ function Home() {
 				style={{
 					backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/background-1.jpeg)`,
 				}}
-				className="bg-cover bg-center bg-no-repeat h-screen "
+				className="bg-cover bg-center bg-no-repeat h-[110vh] md:h-[130vh] lg:md:h-[110vh] "
 			>
-				<div className="bg-cover bg-center bg-no-repeat h-screen rounded-[10px] bg-[#fff7]">
+				<div className="bg-cover bg-center bg-no-repeat h-[110vh] md:h-[130vh] lg:md:h-[110vh]  rounded-[10px] bg-[#fff7]">
 					<NavBar location={location} />
-					<div className="flex  items-start md:justify-center h-[80vh] flex-col md:flex-row ">
+					<div className="flex  items-start md:justify-center  flex-col md:flex-row ">
 						<img
 							src={`${process.env.PUBLIC_URL}/assets/images/Group 10369.png`}
 							alt="logo"
@@ -30,16 +30,16 @@ function Home() {
 						/>
 						<div className="flex flex-col gap-5 w-full md:w-5/12 mt-5 md:mt-20 px-10 md:px-0 ">
 							<div className="bg-white px-10 py-3 rounded-md flex flex-col gap-3">
-								<div className=" flex flex-col items-center md:flex-row justify-center md:justify-between gap-5 md:gap-0">
+								<div className=" flex flex-col items-center lg:flex-row justify-center lg:justify-between gap-5 lg:gap-0">
 									<input
 										type="text"
 										placeholder="User Name"
-										className="mr-2 border-2 border-gray-200 rounded-md px-4 py-2"
+										className="mr-2 border-2 border-gray-200 rounded-md px-4 py-2 w-full"
 									/>
 									<input
 										type="text"
 										placeholder="Password"
-										className="mr-2 border-2 border-gray-200 rounded-md px-4 py-2"
+										className="mr-2 border-2 border-gray-200 rounded-md px-4 py-2 w-full"
 									/>
 									<button type="button" className="bg-[#ec008c] text-white px-4 py-2 rounded-md">
 										Login

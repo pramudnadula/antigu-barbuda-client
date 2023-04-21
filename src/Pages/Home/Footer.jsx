@@ -3,13 +3,13 @@ function Footer() {
 	return (
 		<footer
 			style={{
-				backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/background-4.jpg)`,
+				backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/footer.png)`,
 			}}
 			className="bg-cover bg-center bg-no-repeat h-full "
 		>
-			<div className="bg-cover bg-center bg-no-repeat h-full rounded-[10px] bg-[#ff487fa6]  px-10">
+			<div className="bg-cover bg-center bg-no-repeat h-full rounded-[10px] bg-[#cc1b4173]  px-10">
 				<div className="container mx-auto flex flex-wrap justify-between">
-					<div className="w-full sm:w-1/3 p-10">
+					<div className="w-full md:w-1/3 p-10">
 						<div className="mb-4">
 							<img
 								src={`${process.env.PUBLIC_URL}/assets/images/logo-whiten.png`}
@@ -24,7 +24,7 @@ function Footer() {
 							memorable trips for your clients.
 						</div>
 					</div>
-					<div className="w-full sm:w-1/3 p-10">
+					<div className="w-full md:w-1/3 p-10">
 						<div className="mb-4 text-white text-xl font-bold">PARTNERS</div>
 						<div className="text-white flex flex-col gap-3">
 							<div className="hover:text-[#b3b3b3] cursor-pointer">
@@ -37,7 +37,7 @@ function Footer() {
 							<div className="hover:text-[#b3b3b3] cursor-pointer">Antigua Pier Group</div>
 						</div>
 					</div>
-					<div className="w-full sm:w-1/3 p-10">
+					<div className="w-full md:w-1/3 p-10">
 						<div className="mb-4 text-white text-2xl font-semibold">CONTACT US</div>
 						<div className="text-white flex flex-col gap-3">
 							<div>

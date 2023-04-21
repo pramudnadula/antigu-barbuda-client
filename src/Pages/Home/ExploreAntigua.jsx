@@ -31,7 +31,7 @@ function ExploreAntigua() {
 	return (
 		<div className="flex flex-col items-center justify-start h-full p-10">
 			<h1 className="text-4xl pt-10 font-bold text-[#ec008c]">Explore Antigua</h1>
-			<div className="flex flex-col md:flex-row items-center justify-center gap-10 mt-10">
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 w-full mt-10 items-center justify-items-center">
 				{data.map((item, key) => (
 					<Link to={item.link} key={key}>
 						<div

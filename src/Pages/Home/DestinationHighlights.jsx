@@ -1,6 +1,6 @@
 function DestinationHighlights() {
 	return (
-		<div className="bg-cover bg-center bg-no-repeat md:h-[70vh] lg:h-[90vh] 2xl:h-[110vh] bg-[#fcf0fb]">
+		<div className="bg-cover bg-center bg-no-repeat h-full md:h-[90vh] lg:h-[120vh] 2xl:h-[110vh] bg-[#fcf0fb]">
 			<h1 className="text-4xl text-center pt-20 font-bold text-[#ec008c]">Destination Highlights</h1>
 			<div className="grid grid-cols-1 md:grid-cols-3 gap-5 p-2 h-full">
 				<div>
